@@ -71,7 +71,6 @@ def check_csv_file(input):
 
 st.set_page_config(
     page_title="Streamlit : マナビDXQuest2024 PBL05 提出ファイル フォーマット 確認アプリ",
-    layout="wide"
 )
 
 st.markdown(f"# マナビDXQuest2024 PBL05 提出ファイル フォーマット確認 アプリ")
