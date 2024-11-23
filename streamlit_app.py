@@ -19,9 +19,9 @@ def check_csv_file(input):
     st.write(f"行 : {shape[0]}, 列: {shape[1]}")
     if shape != (5983, 3):
         st.error("❌ ファイルの行数/列数がおかしい (期待値 -> 行 : 5983, 列: 3)")
+        return
     else:
         st.write("⭕️ ファイルの行数/列数のチェックOK")    
-        return
 
     # 一列目が数値型かをチェック
     is_1st_column_numeric = is_numeric_dtype(df.iloc[:, 0])
